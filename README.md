@@ -61,33 +61,6 @@ The Climate Modeling System provides a flexible framework for creating, configur
 - **Type Safety**: Strong typing ensures climate model integrity
 - **Immutable Base Models**: Base models remain unchanged while allowing customization
 
-## 🚀 Usage Examples
-
-### Creating Base Climate Models
-```csharp
-ColdClimateModelBuilder coldBuilder = new ColdClimateModelBuilder();
-ClimateModelClient coldClient = new ClimateModelClient(coldBuilder);
-string baseModelData = coldClient.GetBaseModelData();
-```
-
-### Creating Custom Climate Models
-```csharp
-IClimateModel tropicalModel = hotClient.CreateClimateModel(
-    "Tropical", 30.0m, 1013.25m, 0.5m, 0.1m, "Tropical Region");
-```
-
-### Cloning and Updating Models
-```csharp
-IClimateModel mountainModel = moderateClient.CreateClimateModel();
-moderateClient.UpdateClimateModel(mountainModel, 
-    "Mountain", 5.0m, 1000.0m, 0.2m, 0.3m, "Mountain Region");
-```
-
-### Comparing Climate Models
-```csharp
-string comparison = client.CompareModels(arcticModel, tropicalModel);
-```
-
 ## 🔮 Future Enhancements
 
 - Add seasonal variation modeling
@@ -107,13 +80,6 @@ This project demonstrates:
 - **Clean Architecture**: Clear separation between abstractions and implementations
 - **SOLID Principles**: Especially Open/Closed and Single Responsibility
 - **Fluent Interface**: Method chaining for improved readability
-
-## 🛠️ Technical Details
-
-- **Framework**: .NET 9
-- **Language**: C# 13
-- **Pattern Category**: Creational Design Patterns
-- **Architecture**: Layered architecture with clear separation of concerns
 
 ## 📄 License
 
